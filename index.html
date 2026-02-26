@@ -33,6 +33,24 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
+   .item {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 .item {
   flex: 1 1 300px; 
@@ -781,6 +799,7 @@ var i, tabcontent;
 
 
 </html>
+
 
 
 
