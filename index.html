@@ -29,15 +29,14 @@ img {
 
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-
 .item {
-  flex: 1 1 300px;
+  flex: 1 1 300px; 
   max-width: 350px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -55,9 +54,10 @@ img {
     align-items: center;
   }
   .item {
-    width: 70%;
+    width: 90%; 
   }
 }
+
 
 .tab {
   overflow: hidden;
@@ -782,6 +782,7 @@ var i, tabcontent;
 
 
 </html>
+
 
 
 
