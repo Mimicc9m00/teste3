@@ -111,7 +111,7 @@ body {
             animation: fadeEffect 0.5s;
 
  </style>
-  
+  <button class="btn-main" onclick="toggleSubMenu()">📂 Abrir Categorias</button>
  <div class="tab">
   <button onclick="openTab('Favoritos')">Favoritos</button>
   <button onclick="openTab('Relaxantes')">Relaxantes</button>
@@ -771,10 +771,16 @@ body {
 
 
 </div>
-
+</div>
 
 
 <script>
+
+
+  function toggleSubMenu() {
+            var menu = document.getElementById("SubMenu");
+            menu.style.display = (menu.style.display === "none") ? "block" : "none";
+        }
 function openTab(tabName) {
 
 var i, tabcontent;
@@ -812,6 +818,7 @@ var i, tabcontent;
 
 
 </html>
+
 
 
 
