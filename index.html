@@ -10,95 +10,86 @@
 <body>
 <h1>Categorizando jogos da minha Steam</h1>
   
- <style>
+<style>
+ body{
+ background:url('https://img.freepik.com/fotos-gratis/fundo-geometrico-escuro-com-espaco-de-copia_24972-1816.jpg?semt=ais_hybrid&w=740');
+}
+ img {
+  border-radius: 20px;
+}
+             .container {
+             display: flex;
+             gap: 20px;
+             justify-content: ; 
+             align-items: center; 
+   }
+
+   .item {
+   text-align: ;
+}
+
+            .item img {
+              width: 500px; 
+              height: auto;
+}   
 body {
-  background: url('https://img.freepik.com/fotos-gratis/fundo-geometrico-escuro-com-espaco-de-copia_24972-1816.jpg?semt=ais_hybrid&w=740');
-  color: white;
-  font-family: Arial, sans-serif;
   width: 100%;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 1200px;
+  min-width: 320px; 
+  max-width: 1200px; 
+} 
+.item {
+   
+      box-shadow: 0 4px 1000px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    }
+    .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+  
+   body {
+      color: white;
+      font-family: Arial;
 }
 
-img {
-  border-radius: 20px;
-  width: 100%;
-  height: auto;
-}
-
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ .container {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
-   .item {
-  background: rgba(255,255,255,0.05);
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-.item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .item {
   flex: 1 1 300px; 
   max-width: 350px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
-.item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
 @media (max-width: 700px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
   .item {
-    width: 90%; 
+    width: 70%;
   }
 }
-
-
-.tab {
-  overflow: hidden;
-  border-bottom: 1px solid white;
+.item img {
+  width: 100%;
+  height: auto;
 }
 
-.tab button {
-  background: none;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-}
+   .tab {
+      overflow: hidden;
+      border-bottom: 1px solid white;
+  }
+ 
+  .tabcontent {
+      display: none;
+      padding: 20px;
+      border-top: none;
+    }
 
-.tab button:hover {
-  background: rgba(255,255,255,0.1);
-}
-
-.tabcontent {
-  display: none;
-  padding: 20px;
-}
-
-</style>
+ </style>
   
  <div class="tab">
   <button onclick="openTab('Favoritos')">Favoritos</button>
@@ -799,6 +790,7 @@ var i, tabcontent;
 
 
 </html>
+
 
 
 
