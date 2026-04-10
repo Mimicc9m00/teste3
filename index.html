@@ -5,146 +5,14 @@
 
 
 </head>
-<body>
-</body>
+
 <body>
 <h1>Categorizando jogos da minha Steam</h1>
   
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-    background: url('https://img.freepik.com/fotos-gratis/fundo-geometrico-escuro-com-espaco-de-copia_24972-1816.jpg?semt=ais_hybrid&w=740');
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 1200px;
-    padding: 20px;
-}
 
-img {
-    border-radius: 20px;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.item {
-    flex: 1 1 300px;
-    max-width: 350px;
-    box-shadow: 0 4px 1000px rgba(0,0,0,0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-}
-
-.item img {
-    width: 100%;
-    height: auto;
-}
-
-.tab {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid rgba(255,255,255,0.2);
-    padding-bottom: 15px;
-}
-
-.tab button {
-    background-color: #1b2838;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.tab button:hover {
-    background-color: #66c0f4;
-}
-
-.tabcontent {
-    display: none;
-    animation: fadeEffect 0.5s;
-}
-
-
-@media (max-width: 700px) {
-  
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .item {
-        width: 70%;
-        max-width: none;
-    }
-}
-table {
-  width: 80%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 2px solid #333;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: #1e1e1e;
-}
-
-th {
-  background: linear-gradient(135deg, #4a5568, #2d3748);
-  color: white;
-  padding: 12px;
-  text-align: left;
-  font-weight: 600;
-  border-bottom: 2px solid #4a5568;
-}
-
-td {
-  color: #e2e8f0;
-  padding: 10px;
-  border-bottom: 1px solid #333;
-  text-align: left;
-}
-
-td:last-child {
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background-color: #2d3748;
-}
-
-tr:hover {
-  background-color: #4a5568;
-  transition: background-color 0.3s ease;
-}
-
-th:first-child,
-td:first-child {
-  border-left: 2px solid #4a5568;
-}
-
-th:last-child,
-td:last-child {
-  border-right: 2px solid #4a5568;
-}   
-
-</style>
+<link rel="stylesheet" href="Parte CSS.css">
 </head>
 
 
@@ -152,11 +20,11 @@ td:last-child {
   
  <div class="tab">
    <button onclick="openTab('Teste')"></button>
-  <button onclick="openTab('Favoritos')">Favoritos</button>
+  <button onclick="openTab('Favoritos')">Preferidos</button>
   <button onclick="openTab('Relaxantes')">Relaxantes</button>
   <button onclick="openTab('Terror')">Terror</button>
-  <button onclick="openTab('Jogos SUS')">Jogos SUS</button>
-  <button onclick="openTab('Resto')">Gratis</button>
+
+  
   <button onclick="openTab('Tabela')">Tabela</button>
 </div>
  
@@ -175,22 +43,19 @@ td:last-child {
  </div> 
   
   
-  <div class="item">
-<a href="https://store.steampowered.com/app/3241660/REPO/">
-
-    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1765552338" alt="Imagem 2">
-   </a>
- <h4>R.E.P.O e divertido pra caramba, melhor coisa e rir das burradas dos amigos (Philipe me matou por causa de mulher).</h4>
-  </div>
-  
    <div class="item">
 <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
     <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?" alt="Imagem 3">
    </a>
  <h4>Primeiro Hollow Knight um dos melhores metroidevanias que existe e que na minha opniao so perde pra sua continuação.</h4>
   </div>  
-</div>   
-  
+
+  <div class="item">
+  <a href="https://store.steampowered.com/app/3510060/Hellbrella/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/3510060/9729a92d04d4877034c2686cf5f204ad158a288d/header.jpg?t=1758194616" alt="Imagem 2">
+    </a>
+    <h4>Um roguelike BR. Incrivel a evolução que os jogos BR estão tendo.</h4>
+  </div>
   
   
     <div class="container">
@@ -323,29 +188,14 @@ td:last-child {
     <h4>Jogo lindo demais e com as animações muito fluidas.</h4>
   </div>
   
-  <div class="item">
-  <a href="https://store.steampowered.com/app/3510060/Hellbrella/">
-    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/3510060/9729a92d04d4877034c2686cf5f204ad158a288d/header.jpg?t=1758194616" alt="Imagem 2">
-    </a>
-    <h4>Um roguelike BR. Incrivel a evolução que os jogos BR estão tendo.</h4>
-  </div>
   
-   <div class="item">
-   <a href="https://store.steampowered.com/app/2827200/MIMESIS/">
-    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/2827200/8a2a6edc97fbf23ea6941974bdf4ed9a6ab34eb4/header.jpg?t=1766974424" alt="Imagem 3">
-    </a>
-    <h4>As vezes eu finjo que nao sei que e meu amigo so pra matar ele. </h4>
-  </div>  
+  
+   
 </div>   
 
 
  <div class="container">
-  <div class="item">
-  <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/">
-    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/2050650/header.jpg?t=1770093365" alt="Imagem 1">
-    </a>
-    <h4>Remake de um jogo que e muito foda, nao tem como ser ruim.</h4>
-  </div>
+  
   
   <div class="item">
   <a href="https://store.steampowered.com/app/1557740/ROUNDS/">
@@ -392,26 +242,69 @@ td:last-child {
 <a href="https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/">
     <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1850570/header.jpg?t=1772107563" alt="Imagem 1">
 </a>
-<h4>Um dos melhores jogos que joguei e olha q aindda nem zerei.</h4>
+<h4>Um dos melhores jogos que joguei e olha q ainda nem zerei.</h4>
  </div> 
   
   
-  <div class="item">
-<a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/">
-
-    <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/418370/header.jpg?t=1770931202" alt="Imagem 2">
-   </a>
- <h4>A atmosfera desse jogo e muito foda, da uma agonia do caramba jogar mas e muito bom.</h4>
-  </div>
   
    <div class="item">
 <a href="https://store.steampowered.com/app/4000/Garrys_Mod/">
     <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/4000/header.jpg?t=1764757984" alt="Imagem 3">
    </a>
  <h4>Eu posso fazer tudo que eu quizer, simplismente incrivel.</h4>
+  </div>   
+<div class="container">
+  <div class="item">
+  <a href="https://store.steampowered.com/app/70/HalfLife/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/70/header.jpg?t=1745368462" alt="Imagem 1">
+    </a>
+    <h4>A lenda dos jogos</h4>
+  </div>
+</div>
+  <div class="item">
+  <a href="https://store.steampowered.com/app/620/Portal_2/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/620/header.jpg?t=1745363004" alt="Imagem 2">
+    </a>
+    <h4>Portal 2 e um jogo que pega tudo de bom do 1 e melhora de uma forma inacreditavel</h4>
+  </div>
+  
+   <div class="item">
+   <a href="https://store.steampowered.com/app/400/Portal/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/400/header.jpg?t=1745368554" alt="Imagem 3">
+    </a>
+    <h4>Tutorial de Portal 2 </h4>
   </div>  
-</div>   
+ </div> 
+</div>
  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -569,7 +462,7 @@ td:last-child {
     </a>
     <h4>Dos mesmos criadores de limbo, jogo realmente impressioante e passa uma boa critica social. </h4>
   </div> 
-  <div class="container">
+  
 
   <div class="item">
   <a href="https://store.steampowered.com/app/1132910/ITORAH/">
@@ -577,7 +470,6 @@ td:last-child {
     </a>
     <h4>Um bom metroidevania, recomendo jogar se nao tiver mais alga em mente.</h4>
   </div>
-  <div class="container">
 
   <div class="item">
   <a href="https://store.steampowered.com/app/200260/Batman_Arkham_City__Game_of_the_Year_Edition/">
@@ -585,11 +477,66 @@ td:last-child {
     </a>
     <h4>Melhor joguinho do batman na minha opnião.</h4>
   </div>
- </div>
+  <div class="container">
+  <div class="item">
+  <a href="https://store.steampowered.com/app/384190/ABZU/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/384190/header.jpg?t=1758304762" alt="Imagem 1">
+    </a>
+    <h4>Jogo muito bom e bonito pra caramba</h4>
+   </div>
+    <div class="item">
+  <a href="https://store.steampowered.com/app/844850/Tower_Hunter_Erzas_Trial/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/844850/header.jpg?t=1667443834" alt="Imagem 2">
+    </a>
+    <h4>Roguelikee de waifu...nao preciso dizer mais nada</h4>
+  </div>
+  
+   <div class="item">
+   <a href="https://store.steampowered.com/app/1608230/Planet_of_Lana/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1608230/afc987687f2f80c5c4a93293f2f0f53a62032212/header.jpg?t=1772728759" alt="Imagem 3">
+    </a>
+    <h4>Jogo com umas historia foda e visualmente muuito bonito </h4>
+  </div>  
+</div> 
+
  </div>
  </div>
  </div>
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  <div id="Terror" class="tabcontent">
  
@@ -683,19 +630,109 @@ td:last-child {
     </a>
     <h4>Voce e um assassino pisicopata que sai matando geral, estranhamente divertido. </h4>
   </div>  
+    <div class="container">     
    <div class="item">
   <a href=" https://store.steampowered.com/app/282140/SOMA/">
     <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/282140/header.jpg?t=1752056335" alt="Imagem 2">
     </a>
     <h4>Sendo bem sincero ainda nao conseguir jogar isso por muito tempo, mas vejo potencial.</h4>
   </div>
+ </div>
+<div class="item">
+  <a href="https://store.steampowered.com/app/883710/Resident_Evil_2/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg?t=1768954831" alt="Imagem 1">
+    </a>
+    <h4>Resident Evil 2 remake e bom pra crlh me viciei nesse jogo por uns 4 dias diretos</h4>
+  </div>
+   <div class="item">
+  <a href="https://store.steampowered.com/app/952060/Resident_Evil_3/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg?t=1768956538" alt="Imagem 2">
+    </a>
+    <h4>Siceramente jogo e bem bonito e com uma boa ambientação mas não ta me prendendo muito</h4>
+  </div>
+ </div>
+ <div class="container">
+  <div class="item">
+  <a href="https://store.steampowered.com/app/3241660/REPO/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1765552338" alt="Imagem 1">
+    </a>
+    <h4>R.E.P.O e divertido pra caramba, melhor coisa e rir das burradas dos amigos (Philipe me matou por causa de mulher).</h4>
+  </div>
+  
+  <div class="item">
+  <a href="https://store.steampowered.com/app/2827200/MIMESIS/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2827200/825cac843c69f16866fdf3bb649eb4d7e666cb2b/header_alt_assets_0.jpg?t=1774936472" alt="Imagem 2">
+    </a>
+    <h4>As vezes eu finjo que nao sei que e meu amigo so pra matar ele.</h4>
+  </div>
+  
+   <div class="item">
+   <a href="https://store.steampowered.com/app/2050650/Resident_Evil_4/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922" alt="Imagem 3">
+    </a>
+    <h4>Re4 é absolute cinema jogasso da porra </h4>
+  </div>  
 </div> 
-
-
+<div class="container">
+  <div class="item">
+  <a href="https://store.steampowered.com/app/418370/Resident_Evil_7_Biohazard/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/418370/header.jpg?t=1770931202" alt="Imagem 1">
+    </a>
+    <h4>A atmosfera desse jogo e muito foda, da uma agonia do caramba jogar mas e muito bom.</h4>
+  </div>
+   <div class="item">
+  <a href="https://store.steampowered.com/app/341940/Hatred/">
+    <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/341940/header.jpg?t=1764074921" alt="Imagem 2">
+    </a>
+    <h4>É um jogo de matar pessoas vo considerar terror mesmo</h4>
+  </div>
+</div>
+ </div>
  </div>
  
- 
- <div id="Jogos SUS" class="tabcontent">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="Jogos SU" class="tabcontent">
 
 <h1>Jogos SUS (tudo pra farma card)</h1>
 
@@ -838,7 +875,7 @@ td:last-child {
 </div>
 </div>
 
-<div id="Resto" class="tabcontent">
+<div id="Rest" class="tabcontent">
 
   <div class="container">
   <div class="item">
@@ -1158,29 +1195,75 @@ td:last-child {
 </div>
 
 <div id="Tabela" class="tabcontent">
+  <h1>Melhores jogos de cada Categorizando</h1>
+  <div class="item2">
   <table>
        <tr>
           <th onclick="openTab('Favoritos')">Favoritos</th>
          <th onclick="openTab('Relaxantes')">Relaxantes</th>
          <th onclick="openTab('Terror')">Terror</th>
-          <th onclick="openTab('Jogos SUS')">Jogos Sus</th>
+         
        </tr>
        <tr>
-          <td>27</td>
-          <td>21</td>
-           <td>13</td>
-           <td>17</td>
+          <td><a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?">
+              </a>
+              <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?t=1770338567">
+              </a>
+              <a href="https://store.steampowered.com/app/683320/GRIS/">
+                 <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/683320/header.jpg?t=1759429603">
+              </a>
+              <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">
+                 <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961">
+              </a>
+              <a href="https://store.steampowered.com/app/2420660/Neva/">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2420660/header.jpg?t=1771587898">
+              </a>
+       </td>
+
+          <td><a href="https://store.steampowered.com/app/643810/Fugl_Pssaro/">
+               <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/643810/header.jpg?t=1733693617">
+               </a>
+              <a href="https://store.steampowered.com/app/1796470/Haste/">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1796470/header.jpg?t=1752241805">
+              </a>
+              <a href="https://store.steampowered.com/app/384190/ABZU/">
+               <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/384190/header.jpg?t=1758304762">
+              </a>
+              <a href="https://store.steampowered.com/app/1977170/Jusant/">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1977170/header.jpg?t=1766161608">
+              </a>
+              <a href="https://store.steampowered.com/app/1823930/Wavetale/">
+               <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1823930/header.jpg?t=1759330606">
+              </a></td>
 
 
+           <td><a href="https://store.steampowered.com/app/3241660/REPO/">
+                  <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1765552338">
+                  </a>
+                <a href="https://store.steampowered.com/app/883710/Resident_Evil_2/">
+                  <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/883710/header.jpg?t=1768954831">
+                </a>
+                <a href="https://store.steampowered.com/app/1721470/Poppy_Playtime/">
+                 <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/1721470/00ca34a0c863a8d86c6582904249216d6aa263bd/header.jpg?t=1770858202">
+                </a>
+                <a href="https://store.steampowered.com/app/282140/SOMA/">
+                  <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/282140/header.jpg?t=1752056335">
+                </a>
+                <a href="https://store.steampowered.com/app/2881650/Content_Warning/">
+                  <img src="https://shared.fastly.steamstatic.com/store_item_assets//steam/apps/2881650/header.jpg?t=1736717925">
+                </a></td>
 
+
+          
        </tr>
 
   </table>
+  </div>
 </div>
-<script>
-
-
-function openTab(tabName) {
+<Script>
+    function openTab(tabName) {
 
 var i, tabcontent;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -1190,8 +1273,7 @@ var i, tabcontent;
   }
   document.getElementById(tabName).style.display = "block";
 }
-</script>
-
+</Script>
 
 
 </body>
@@ -1217,4 +1299,3 @@ var i, tabcontent;
 
 
 </html>
-
